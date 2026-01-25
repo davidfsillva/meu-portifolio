@@ -75,6 +75,18 @@ section#ficha {
   grid-column: 2;
 }
 
+section#detalhes {
+  background-color: rgb(245, 245, 245);
+  color: var(--destaque);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+}
+
+li {
+  color: var(--texto);
+}
+
 section#ficha img {
   width: 200px;
   aspect-ratio: 1/1;
@@ -114,3 +126,45 @@ div#social a:hover {
   color: var(--destaque-inverso);
 }
 
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skill-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+  margin: 5px;
+}
+
+#skill-container .pocent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skill-container .barra {
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+  box-shadow: #0000004d 0px 1px 2px;
+}
+
+#skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
