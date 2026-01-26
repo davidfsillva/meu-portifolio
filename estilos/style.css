@@ -66,9 +66,9 @@ nav#menu a:hover {
 
 main {
   display: grid;
-  grid-template-columns: auto 90vw auto;
   gap: 20px;
   margin-top: 20px;
+  grid-template-columns: 1fr min(90%, 1200px) 1fr;
 }
 
 #skills,
