@@ -110,10 +110,13 @@ section#ficha, section#detalhes {
 
 #social a {
   color: var(--destaque);
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 #social a:hover {
   color: var(--destaque-inverso);
+  transform: scale(1.15);
+  
 }
 
 article {
