@@ -66,6 +66,13 @@ main {
   margin-top: 20px;
 }
 
+#skills,
+#formacao,
+#projects {
+  scroll-margin-top: 60px; /* altura do header */
+}
+
+
 section#ficha, section#detalhes {
   grid-column: 2;
   background-color: var(--fundo-card);
