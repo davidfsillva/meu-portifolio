@@ -210,6 +210,11 @@ article h2 {
   border-left-width: 15px;
 }
 
+h3 a {
+  color: var(--destaque);
+  text-decoration: none;
+}
+
 .foto {
   width: 100%;
   aspect-ratio: 16/9;
