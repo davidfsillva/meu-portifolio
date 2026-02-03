@@ -59,10 +59,11 @@ main {
   grid-template-columns: 1fr min(90%, 1200px) 1fr;
 }
 
+#ficha,
 #skills,
 #formacao,
 #projects {
-  scroll-margin-top: 60px; /* altura do header */
+  scroll-margin-top: 80px; /* altura do header */
 }
 
 
@@ -133,6 +134,21 @@ article h2 {
   margin-bottom: 15px;
 }
 
+.group {
+  color: white;
+  background-color: #0080ff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+  padding-bottom: 20px;
+}
+
+.group:hover {
+  color: black;
+  transform: scale(1.0);  
+  cursor: default;
+}
+
 #skill-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -151,6 +167,10 @@ article h2 {
 .porcent {
   font-weight: bold;
   color: var(--destaque);
+}
+
+strong {
+  color: rgba(255, 255, 255, 0.541);
 }
 
 .barra {
@@ -232,6 +252,7 @@ footer {
   padding: 15px;
   border-radius: 10px 10px 0 0;
 }
+
 @media screen and (min-width: 600px) {
   main {
     grid-template-columns: auto 300px 1fr auto;
